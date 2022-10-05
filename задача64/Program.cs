@@ -3,11 +3,11 @@
 Console.Write("Введите N: ");
 int N = int.Parse(Console.ReadLine()!);
 
-Console.WriteLine (GetNaturalNumbers(N));
+Console.WriteLine(GetNaturalNumbers(N));
 
-string GetNaturalNumbers (int N)
+string GetNaturalNumbers(int N)
 {
-      if (N == 1)
-            return "1";
-      return N + ", " + GetNaturalNumbers(N - 1);
+    if (N == 1)
+        return "1";
+    return N + ", " + GetNaturalNumbers(N - 1);
 }
